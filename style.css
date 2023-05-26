@@ -76,22 +76,33 @@ header {
 }
 
 .button {
-  background-color: black;
+  background-color: white;
   font-size: 14px;
-  color: white;
+  color: #222222;
   margin-top: 15px;
   padding: 15px 40px;
   border: none;
   border-radius: 40px;
   cursor: pointer;
-  transition: 0.15s all;
+  transition: 0.15s all ease-in-out;
 }
 
 .button:hover {
-    background: linear-gradient(to left, #ff00ff, #8766c4);
+    background: linear-gradient(to left, #ff00ff, #8766c4, #b289ff);
     padding: 18px 50px;
     font-size: 16px;
+    animation: spin 1s infinite;
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 
 .button:active {
     padding: 20px 60px;
@@ -116,14 +127,29 @@ header {
 
 .fa-solid:hover {
     font-size: 30px;
-    background: linear-gradient(to left, #ff00ff, #8766c4);
+    background: linear-gradient(to left, #ff00ff, #8766c4, , #b289ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    
 }
 
 .fa-solid:active {
     font-size: 30px;
 }
+
+.fab:hover,
+.fa-solid:hover {
+    animation: spin 1s infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 .header-links,
 .social-icons,
@@ -133,7 +159,7 @@ header {
 }
 
 .header-title:hover {
-    background: linear-gradient(to left, #ff00ff, #8766c4);
+    background: linear-gradient(to bottom, #ff00ff, #8766c4, #b289ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: bounce 0.5s;
@@ -161,7 +187,7 @@ header {
 
 #home:hover {
     font-size: 30px;
-    background: linear-gradient(to left, #ff00ff, #8766c4);
+    background: linear-gradient(to bottom, #ff00ff, #8766c4, #b289ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -169,21 +195,21 @@ header {
 
 #about-me:hover {
     font-size: 30px;
-    background: linear-gradient(to left, #ff00ff, #8766c4);
+    background: linear-gradient(to bottom, #ff00ff, #8766c4, #b289ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #archives:hover {
     font-size: 30px;
-    background: linear-gradient(to left, #ff00ff, #8766c4);
+    background: linear-gradient(to bottom, #ff00ff, #8766c4, #b289ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #pages:hover {
     font-size: 30px;
-    background: linear-gradient(to left, #ff00ff, #8766c4);
+    background: linear-gradient(to bottom, #ff00ff, #8766c4, #b289ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
