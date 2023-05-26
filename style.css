@@ -1,0 +1,107 @@
+body {
+  background-image: url(./photos/greece.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Barlow Condensed";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 0px;
+}
+
+.header-title, 
+.header-links a,
+.social-icons {
+    color: white;
+}
+
+
+.header-title {
+  font-size: 25px;
+  margin: 0;
+  font-weight: lighter;
+}
+
+.header-links {
+  display: flex;
+  font-size: 20px;
+  gap: 35px;
+}
+
+.header-links a {
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons i {
+  font-size: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.top-text,
+.middle-text {
+  color: white;
+}
+
+.top-text {
+  margin: 0;
+  font-size: 30px;
+}
+
+.middle-text {
+  margin: 0;
+  font-size: 50px;
+}
+
+.button {
+  background-color: black;
+  font-size: 13px;
+  color: white;
+  margin-top: 15px;
+  padding: 15px 40px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 0.15s all;
+}
+
+.button:hover {
+    background: linear-gradient(to left, #ff00ff, #8766c4);
+    padding: 18px 50px;
+    font-size: 16px;
+}
+
+.button:active {
+    padding: 20px 60px;
+}
+
+.fa-brands {
+    transition: 0.15s all;
+}
+
+.fa-brands:hover {
+    font-size: 30px;
+}
+
+.fa-brands:active {
+    font-size: 30px;
+}
