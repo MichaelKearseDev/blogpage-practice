@@ -24,12 +24,15 @@ header {
   font-size: 25px;
   margin: 0;
   font-weight: lighter;
+  transition: 0.1s all ease-in-out;
+  transition: transform 0.5s;
 }
 
 .header-links {
   display: flex;
   font-size: 20px;
   gap: 35px;
+  margin: 0;
 }
 
 .header-links a {
@@ -96,12 +99,16 @@ header {
 
 .fa-brands, 
 .fa-solid {
-    transition: 0.15s all;
+    transition: 0.15s all ease-in-out;
 }
 
 .fa-brands:hover {
     font-size: 30px;
+    background: linear-gradient(to left, #ff00ff, #8766c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
 
 .fa-brands:active {
     font-size: 30px;
@@ -109,8 +116,74 @@ header {
 
 .fa-solid:hover {
     font-size: 30px;
+    background: linear-gradient(to left, #ff00ff, #8766c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .fa-solid:active {
     font-size: 30px;
+}
+
+.header-links,
+.social-icons,
+.header-title,
+.container {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-title:hover {
+    background: linear-gradient(to left, #ff00ff, #8766c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: bounce 0.5s;
+}
+
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#home,
+#about-me,
+#archives,
+#pages {
+    transition: 0.1s all ease-in-out;
+}
+
+
+#home:hover {
+    font-size: 30px;
+    background: linear-gradient(to left, #ff00ff, #8766c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#about-me:hover {
+    font-size: 30px;
+    background: linear-gradient(to left, #ff00ff, #8766c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#archives:hover {
+    font-size: 30px;
+    background: linear-gradient(to left, #ff00ff, #8766c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pages:hover {
+    font-size: 30px;
+    background: linear-gradient(to left, #ff00ff, #8766c4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
