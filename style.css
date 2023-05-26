@@ -125,7 +125,7 @@ header {
 
 .fa-solid:hover {
   font-size: 30px;
-  background: linear-gradient(to left, #ff00ff, #8766c4, , #b289ff);
+  background: linear-gradient(to left, #ff00ff, #8766c4, #b289ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
