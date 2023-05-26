@@ -74,7 +74,7 @@ header {
 
 .button {
   background-color: black;
-  font-size: 13px;
+  font-size: 14px;
   color: white;
   margin-top: 15px;
   padding: 15px 40px;
@@ -94,7 +94,8 @@ header {
     padding: 20px 60px;
 }
 
-.fa-brands {
+.fa-brands, 
+.fa-solid {
     transition: 0.15s all;
 }
 
@@ -103,5 +104,13 @@ header {
 }
 
 .fa-brands:active {
+    font-size: 30px;
+}
+
+.fa-solid:hover {
+    font-size: 30px;
+}
+
+.fa-solid:active {
     font-size: 30px;
 }
